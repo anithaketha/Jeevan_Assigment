@@ -1,13 +1,107 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Times New Roman', serif;
+  background: linear-gradient(to bottom, #9b5de5, #6a0dad);
+  color: white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.main-container {
+  padding: 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.tap-drop-text{
+    font-weight: bold;
+    font-size: 25px;
+    margin-top:0px;
+}
+.bubble-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 450px; 
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.thought-bubble {
+  width: 170px;
+  height: 60px;
+  
+  background: white;
+  
+  border-radius: 50px;
+  position: relative;
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  cursor: grab;
+  z-index: 1;
+}
+
+.thought-bubble::before,
+.thought-bubble::after {
+  content: '';
+  position: absolute;
+  background: white;
+  z-index: -1;
+  border-radius: 50px;
+}
+
+.thought-bubble::after {
+  width: 50px;
+  height: 50px;
+  top: -25px;
+  left: 25px;
+  border-radius: 50px;
+}
+
+.thought-bubble::before {
+  width: 90px;
+  height: 90px;
+  top: -45px;
+  right: 25px;
+  border-radius: 100px;
+}
+
+@media (max-width: 480px) {
+  .bubble-container {
+    max-width: 180px;
+  }
+  .thought-bubble {
+    width: 100%;
+    margin: 15px 0;
+  }
+}
+
+
+
+.continue-button {
+  display: block;
+  margin: 30px auto;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  background: linear-gradient(to right, #ff66a6, #6a0dad);
+  border: none;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+}
+
+.continue-button:hover {
+  background: linear-gradient(to right, #ff4f94, #5b00b7);
 }
