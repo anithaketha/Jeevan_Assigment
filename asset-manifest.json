@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Jeevan_Assigment/static/css/main.5143cffb.css",
+    "main.js": "/Jeevan_Assigment/static/js/main.121072af.js",
+    "static/js/453.ddd76103.chunk.js": "/Jeevan_Assigment/static/js/453.ddd76103.chunk.js",
+    "index.html": "/Jeevan_Assigment/index.html",
+    "main.5143cffb.css.map": "/Jeevan_Assigment/static/css/main.5143cffb.css.map",
+    "main.121072af.js.map": "/Jeevan_Assigment/static/js/main.121072af.js.map",
+    "453.ddd76103.chunk.js.map": "/Jeevan_Assigment/static/js/453.ddd76103.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5143cffb.css",
+    "static/js/main.121072af.js"
+  ]
+}
