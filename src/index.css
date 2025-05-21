@@ -89,6 +89,56 @@ h1 {
 }
 
 
+.drop-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* margin-top: 30px; */
+}
+
+.drop-zone {
+  flex: 1 1 300px;
+  min-height: 200px;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 50px;
+}
+
+.light-black {
+  background-color: #444; 
+}
+
+.black {
+  background-color: #2d2828; 
+}
+
+.drop-zone h2 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.emoji {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
+
+.zone-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.zone-item {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 15px;
+}
 
 .continue-button {
   display: block;
@@ -104,4 +154,19 @@ h1 {
 
 .continue-button:hover {
   background: linear-gradient(to right, #ff4f94, #5b00b7);
+}
+
+@media (max-width: 600px) {
+  .bubble-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .drop-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .drop-zone {
+    width: 100%;
+  }
 }
